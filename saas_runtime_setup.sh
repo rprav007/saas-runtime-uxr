@@ -208,7 +208,7 @@ main() {
   )
 
   INFRA_ROLES=(
-    "roles/config.agent"
+    "roles/config.admin"
     "roles/storage.admin"
     "roles/container.admin"
     "roles/iam.serviceAccountUser"
