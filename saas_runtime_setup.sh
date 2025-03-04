@@ -91,7 +91,7 @@ setup_saas_runtime_sa() {
     log "Triggering p4sa account creation..."
 
     # Create a temporary SaaS type to trigger account creation
-    TEMP_SAAS_NAME="HelloSaaS-$(date +%s)"
+    TEMP_SAAS_NAME="hellosaas-$(date +%s)"
     gcloud alpha saas saas-types create ${TEMP_SAAS_NAME} --location=us-central1 --locations=name=us-central1 --project=${GCP_PROJECT_ID} || \
       log "Warning: Creating SaaS type may have failed, but this could be expected."
 
